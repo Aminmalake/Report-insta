@@ -32,7 +32,7 @@ username = input('nawe instakat:')
 
 password = input('passworde instakat:')
 
-target = input('nawe instay kasaka❗:')
+target = input('nawe instay kasaka:')
 
 sle = int(input('xeray reportaka:'))
 
@@ -60,7 +60,7 @@ def login()
 
         r.headers.update({'X-CSRFToken': req_login.cookies['csrftoken']})
 
-        print('login True')
+        print('krayawa')
 
         url_id = 'https://www.instagram.com/{}/?__a=1'.format(target)
 
