@@ -7,6 +7,7 @@ uid = uuid.uuid4()
 r = requests.Session()
 
 cookie = secrets.token_hex(8)*2
+
 #### LOGO ####
 
 logo = """
@@ -25,13 +26,19 @@ logo = """
 
 \033[1;92m║══▒═✺═▒═✺═▒═══¤═¤═¤════════════¤═══║
 
-\033[1;96m║✯ Creator ✯ AMIN     ⠀ ⠀      ║
+\033[1;96m║✯ Creator ✯ AMIN MALAKE        ║    
 
-\033[1;98m║✯ AMIN x MALAKE                ║
+\033[1;98m║✯ AMIN x MALAKE                ║  
 
-\033[1;96m║✯ instagram : i4m.amin  ⠀⠀⠀⠀⠀⠀║
+\033[1;96m║✯ instagram : amin_malake      ║
 
 \033[1;92m║══▒═✺═▒═✺═▒═══¤═¤═¤════════════¤═══║"""
+
+def tik():
+
+	titik = ['.   ','..  ','... ']	for o in titik:
+
+		print
 
 username = input('nawe instakat:')
 
