@@ -40,7 +40,7 @@ def login():
 
         r.headers.update({'X-CSRFToken': req_login.cookies['csrftoken']})
 
-        print('krayawa ✅')
+        print('krayawa')
 
         url_id = 'https://www.instagram.com/{}/?__a=1'.format(target)
 
