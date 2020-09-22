@@ -8,13 +8,13 @@ r = requests.Session()
 
 cookie = secrets.token_hex(8)*2
 
-username = input('your user:')
+username = input('nawe instakat:')
 
-password = input('your password:')
+password = input('password instakat:')
 
-target = input('target:')
+target = input('nawe instay kasaka:')
 
-sle = int(input('sleep:'))
+sle = int(input('xeraye reportaka:'))
 
 def login():
 
@@ -40,7 +40,7 @@ def login():
 
         r.headers.update({'X-CSRFToken': req_login.cookies['csrftoken']})
 
-        print('login True')
+        print('krayawa ✅')
 
         url_id = 'https://www.instagram.com/{}/?__a=1'.format(target)
 
@@ -60,7 +60,7 @@ def login():
 
             report = r.post(url_report,data=datas)
 
-            print('done spam {}'.format(done))
+            print('done spam ✅{}'.format(done))
 
             sleep(sle)
 
